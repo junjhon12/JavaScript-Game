@@ -95,7 +95,23 @@ h3, h4 {
 }
 
 #player-stats { grid-area: player; }
-#enemy-display { grid-area: enemy; }
+#enemy-display {
+    grid-area: enemy;
+    background-color: var(--retro-blue);
+    padding: 15px;
+    text-align: left;
+    border: 12px solid;
+    border-image-source: url(https://i.imgur.com/jI9a614.png);
+    border-image-slice: 6;
+    border-image-width: 1;
+    border-image-repeat: stretch;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .game-title {
     font-size: 1.5em;

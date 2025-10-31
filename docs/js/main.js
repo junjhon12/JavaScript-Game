@@ -1,6 +1,6 @@
 import { state } from './state.js';
 import { PERSONAS } from './data.js';
-import { render, logMessage } from './ui.js';
+import { render, logMessage, updateBackground } from './ui.js';
 import { attack, useAbility } from './combat.js';
 import { spawnEnemy, handleStartOfTurnPassives } from './flow.js';
 
@@ -43,6 +43,7 @@ function startGame(personaName) {
     spawnEnemy();
     handleStartOfTurnPassives();
     render();
+    updateBackground();
     const exitContainer = document.getElementById("exit-container");
     exitContainer.style.display = 'block';
     exitContainer.innerHTML = '';
@@ -73,9 +74,10 @@ function loadGame() {
 
         document.getElementById("start-screen").style.display = 'none';
         document.getElementById("game-screen").style.display = 'grid';
-        document.getElementById('game-log').innerHTML = ''; // Clear log on load
+        document.getElementById('game-log').innerHTML = '';
         logMessage("Save file loaded successfully.", "log-system");
         render();
+        updateBackground();
         alert("Game Loaded!");
     } else {
         alert("No save file found!");

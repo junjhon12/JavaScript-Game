@@ -1,6 +1,16 @@
 import { state } from './state.js';
-import { SKILLS, PASSIVE_SKILLS } from './data.js';
+import { SKILLS, PASSIVE_SKILLS, FLOOR_BACKGROUNDS } from './data.js';
 import { useAbility } from './combat.js';
+
+export function updateBackground() {
+    const enemyDisplayDiv = document.getElementById("enemy-display");
+    if (enemyDisplayDiv) {
+        const floorTier = Math.floor(state.totalKills / 10);
+        const bgIndex = Math.min(floorTier, FLOOR_BACKGROUNDS.length - 1);
+        const backgroundImage = FLOOR_BACKGROUNDS[bgIndex];
+        enemyDisplayDiv.style.backgroundImage = `url('${backgroundImage}')`;
+    }
+}
 
 export function render() {
     if (!state.persona) return;
@@ -69,6 +79,8 @@ export function render() {
             </div>
         `;
     }
+    
+    updateBackground();
 
     const actionsDiv = document.getElementById("actions");
     actionsDiv.classList.remove('reward-mode');

@@ -202,7 +202,7 @@ export const MINI_BOSSES = [
 ];
 export const BOSSES = [
     {
-        name:"Cerberus", HP: 220, maxHP: 220, SP: 80,
+        name:"Cerberus", HP: 180, maxHP: 220, SP: 80,
         STATS:{STR: 16, MAG: 8, END: 15, AGI: 14, LUK: 7},
         ABILITY:["gigantic_fist", "power_slash"], img:"./img/Cerberus.png", 
         affinities: { ice: 'weak', fire: 'null' },
@@ -210,7 +210,7 @@ export const BOSSES = [
         description: "A relentless physical attacker that tests your endurance and physical defense."
     },
     {
-        name:"Girimehkala", HP: 250, maxHP: 250, SP: 120,
+        name:"Girimehkala", HP: 150, maxHP: 250, SP: 120,
         STATS:{STR: 14, MAG: 14, END: 20, AGI: 8, LUK: 9},
         ABILITY:["megaton_raid", "eigaon"], img:"./img/Girimekhala.png", 
         affinities: { phys: 'null', dark: 'resist', light: 'weak', nuke: 'weak' },
@@ -218,7 +218,7 @@ export const BOSSES = [
         description: "A defensive fortress that nullifies all physical attacks, forcing a magic-based strategy."
     },
     {
-        name:"Belphegor", HP: 220, maxHP: 220, SP: 150,
+        name:"Belphegor", HP: 120, maxHP: 220, SP: 150,
         STATS:{STR: 10, MAG: 17, END: 14, AGI: 12, LUK: 11},
         ABILITY:["agidyne", "bufudyne"], img:"./img/Belphegor.png",
         affinities: { fire: 'resist', ice: 'null', elec: 'weak' },
@@ -226,7 +226,7 @@ export const BOSSES = [
         description: "A powerful mage that barrages you with high-tier elemental spells."
     },
     {
-        name:"Odin", HP: 260, maxHP: 260, SP: 140,
+        name:"Odin", HP: 160, maxHP: 260, SP: 140,
         STATS:{STR: 18, MAG: 18, END: 17, AGI: 16, LUK: 14},
         ABILITY:["ziodyne", "brave_blade"], img:"./img/Odin.png", 
         affinities: { wind: 'weak', elec: 'null', light: 'resist' },
@@ -234,7 +234,7 @@ export const BOSSES = [
         description: "A balanced master of both physical and magical combat with no obvious flaws."
     },
     {
-        name:"Trumpeter", HP: 280, maxHP: 280, SP: 200,
+        name:"Trumpeter", HP: 180, maxHP: 280, SP: 200,
         STATS:{STR: 15, MAG: 18, END: 16, AGI: 15, LUK: 15},
         ABILITY:["megidola", "diarahan"], img:"./img/Trumpeter.webp", 
         affinities: { elec: 'weak', light: 'null', dark: 'null' },
@@ -260,6 +260,13 @@ export const FLOOR_ENCOUNTERS = [
     ["Leanan Sídhe", "Rakshasa"],
     ["Queen Mab", "Rangda"],
     ["Throne", "Barong", "Abaddon", "Anubis"]
+];
+export const FLOOR_BACKGROUNDS = [
+    './bg-img/level1.jpg', 
+    './bg-img/level2.jpg', 
+    './bg-img/level3.webp', 
+    './bg-img/level4.jpg', 
+    './bg-img/level5.webp', 
 ];
 export const SKILLS = {
     lunge: { name: "Lunge", cost: { hp: 5 }, power: 13, type: "physical", element: "phys", evolves_to: "assault_dive" },

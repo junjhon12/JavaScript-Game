@@ -1,7 +1,3 @@
-docs(project): Create comprehensive README file
-
-Here is a complete README.md file for your project, based on all the files and features you've built.
-
 Persona Tensei: Downward Hellwhole
 
 Persona Tensei: Downward Hellwhole is a turn-based, retro-style JRPG built with pure JavaScript, HTML, and CSS. Inspired by the Persona and Shin Megami Tensei series, this game challenges the player to choose a starting Persona and battle their way through multiple floors of a demon-filled abyss.

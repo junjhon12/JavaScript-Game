@@ -3,6 +3,7 @@ export const PERSONAS = {
         name: "Orpheus", HP: 75, SP: 30,
         STATS:{STR: 5, MAG: 4, END: 5, AGI: 4, LUK: 3},
         ABILITY:["bash", "agi", "dia"], img:"./img/Orpheus.png",
+        PASSIVES: ["regenerate_1"],
         affinities: { elec: 'weak', fire: 'resist' }
     },
     Izanagi: {
@@ -202,8 +203,8 @@ export const MINI_BOSSES = [
 ];
 export const BOSSES = [
     {
-        name:"Cerberus", HP: 180, maxHP: 220, SP: 80,
-        STATS:{STR: 16, MAG: 8, END: 15, AGI: 14, LUK: 7},
+        name:"Cerberus", HP: 110, maxHP: 220, SP: 80,
+        STATS:{STR: 13, MAG: 8, END: 15, AGI: 14, LUK: 7},
         ABILITY:["gigantic_fist", "power_slash"], img:"./img/Cerberus.png", 
         affinities: { ice: 'weak', fire: 'null' },
         isBoss: true,

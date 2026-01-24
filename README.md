@@ -42,7 +42,7 @@ This project is a deep dive into **Vanilla JS game development**, avoiding exter
 
 ### **Direct Play**
 Access the live version via GitHub Pages:  
-👉 **[Insert Your GitHub Pages Link Here]**
+👉 **(https://junjhon12.github.io/Downward-Hellwhole-Retro-JRPG/)**
 
 ### **Local Setup**
 Because the game uses JS Modules and local audio assets, it requires a local server to run correctly:

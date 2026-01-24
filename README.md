@@ -1,77 +1,63 @@
-Persona Tensei: Downward Hellwhole
+# 🃏 Persona Tensei: Downward Hellwhole
 
-Persona Tensei: Downward Hellwhole is a turn-based, retro-style JRPG built with pure JavaScript, HTML, and CSS. Inspired by the Persona and Shin Megami Tensei series, this game challenges the player to choose a starting Persona and battle their way through multiple floors of a demon-filled abyss.
+![JavaScript](https://img.shields.io/badge/Language-JavaScript_ES6+-f7df1e?logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/Style-CSS3-1572B6?logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/Structure-HTML5-E34F26?logo=html5&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Playable-brightgreen)
 
-The game features a deep combat system with elemental affinities, a robust leveling and skill progression system, and a fully responsive UI designed to work on both desktop and mobile.
+**Persona Tensei: Downward Hellwhole** is a turn-based, retro-style JRPG built entirely with **Vanilla JavaScript**. Inspired by the *Persona* and *Shin Megami Tensei* series, this game challenges players to descend into a demon-filled abyss using elemental weaknesses and strategic skill management.
 
-Key Features
+---
 
-Core Combat
+## 🔥 Core Combat Features
 
-    Turn-Based System: A classic JRPG combat flow where the player and enemy exchange actions.
+* **1-More! System:** Exploit elemental affinities (Weak, Resist, Null) to gain extra turns—a hallmark of the Megaten series.
+* **Critical & Evasion Logic:** Combat math driven by Agility (AGI) and Luck (LUK) stats for dynamic, unpredictable battles.
+* **Passive Recovery:** Strategic passives like "Regenerate" to sustain long dungeon crawls.
+* **Tactical UI:** A real-time, scrollable battle log that tracks every status effect, crit, and damage value.
 
-    Elemental Affinities: A full-fledged weakness system. Attacking an enemy with an element they are 'weak' to deals bonus damage and grants the player "1 More!" turn. Enemies can also 'resist' or 'null' attacks.
+## 📈 Progression & Customization
 
-    Critical Hits: Attacks have a chance to deal critical damage based on the player's Luck (LUK) stat, also granting an extra turn.
+### **Choose Your Persona**
+Start your journey with one of three iconic archetypes:
+* **Orpheus** | **Izanagi** | **Arsene**
 
-    Dodge Mechanics: Players can automatically evade enemy attacks based on their Agility (AGI) and Luck (LUK) stats.
+### **Evolution Systems**
+* **Shuffle Time:** A rewards system featuring the full 22-card **Major Arcana** set for stat boosts.
+* **Skill Mutation:** Upgrade your arsenal (e.g., *Agi* ➔ *Agilao*) or learn entirely new passives after boss encounters.
+* **Bestiary:** Features over **20+ unique demons**, 7 mini-bosses, and 6 high-stakes boss fights.
 
-    Passive Skills: Personas can have passive skills like Regenerate 1, which automatically restores HP at the start of a turn.
+---
 
-Progression & Customization
+## 🛠️ Technical Implementation
 
-    Player Leveling: Gain EXP from every battle, level up to increase stats, and fully restore HP/SP. A visual EXP bar tracks progress.
+This project is a deep dive into **Vanilla JS game development**, avoiding external engines (like Phaser or Unity) to master core programming concepts:
 
-    Choose Your Persona: Start the game with one of three unique Personas (Orpheus, Izanagi, or Arsene), each with different starting stats, skills, and affinities.
+* **State Management:** Complex handling of player/enemy stats, turns, and game progression.
+* **DOM Manipulation:** Dynamic rendering of combat effects, health bars, and backgrounds.
+* **Local Persistence:** A fully functional Save/Load system using `localStorage`.
+* **Modular Architecture:** Organized JS modules for clean, maintainable game logic.
 
-    Shuffle Time: After most battles, players are presented with "Shuffle Time," a card-based reward system offering stat boosts from a full 22-card Major Arcana set.
+## 🎮 How to Play
 
-    Skill Evolution & Learning: After boss battles, players enter "Skill Time," where they can upgrade existing skills (e.g., Agi to Agilao) or learn entirely new skills and passives.
+### **Direct Play**
+Access the live version via GitHub Pages:  
+👉 **[Insert Your GitHub Pages Link Here]**
 
-    Extensive Bestiary: Battle over 20 unique demons, 7 challenging mini-bosses, 5 powerful main bosses, and a final boss, each with their own stats, skills, and portraits.
+### **Local Setup**
+Because the game uses JS Modules and local audio assets, it requires a local server to run correctly:
 
-UI & Experience
+1.  **Clone the Repo:**
+    ```bash
+    git clone [https://github.com/junjhon12/JavaScript-Game.git](https://github.com/junjhon12/JavaScript-Game.git)
+    ```
+2.  **Start a Local Server:**
+    If you have Python: `python -m http.server`  
+    If you have Node: `npx http-server`
+3.  Open `localhost:8080` in your browser.
 
-    Responsive Retro UI: A full-screen, responsive interface that adapts cleanly to both desktop and mobile layouts using modern CSS.
+---
 
-    Dynamic Backgrounds: The enemy's background panel changes dynamically as the player descends to new floors, using unique images for each 10-floor block.
-
-    Real-Time Battle Log: A dedicated, scrollable log provides text feedback for every action, from damage and healing to status effects and rewards.
-
-    On-Screen Feedback: Combat events are instantly communicated with visual text like "WEAK," "CRITICAL," and "EVADED".
-
-    Sound Effects: Combat is brought to life with sound effects for hitting, criticals, healing, and menu selections.
-
-    Save System: Players can save or load their progress at any time. Game data is stored locally in the browser's localStorage.
-
-How to Play
-
-    Host Locally:
-
-        Download the project and ensure all files and folders (js/, bg-img/, sfx/) are kept in their original structure.
-
-        Due to browser security restrictions on file:/// paths (which can block JavaScript modules and audio), it's recommended to run the project from a local server.
-
-        If you have Node.js, you can use npx http-server in the root folder and open the provided http://localhost:8080 address.
-
-    Web:
-
-        Upload the entire project folder to any static web host (like GitHub Pages, Netlify, or your university server).
-
-        Access the index.html file via the public URL.
-
-Once the game loads:
-
-    Click "New Game" to start.
-
-    Choose one of the three starting Personas.
-
-    Use your skills to defeat enemies, level up, and see how many floors you can clear!
-
-Technologies Used
-
-    HTML5
-
-    CSS3 (Flexbox, CSS Grid, Media Queries, Border-Image)
-
-    JavaScript (ES6+) (Modules, const/let, Arrow Functions, async/await)
+## 👥 Credits
+Developed with ❤️ by **junjhon12** and contributors.  
+*Inspired by the works of ATLUS.*

@@ -7,6 +7,12 @@
 
 **Persona Tensei: Downward Hellwhole** is a turn-based, retro-style JRPG built entirely with **Vanilla JavaScript**. Inspired by the *Persona* and *Shin Megami Tensei* series, this game challenges players to descend into a demon-filled abyss using elemental weaknesses and strategic skill management.
 
+## Images
+<img width="914" height="917" alt="image" src="https://github.com/user-attachments/assets/847a1e4a-79a8-4a9d-8069-59b8e7d78698" />
+<img width="624" height="372" alt="image" src="https://github.com/user-attachments/assets/982dee49-e285-4d47-bc91-0cb339ab870b" />
+<img width="891" height="906" alt="image" src="https://github.com/user-attachments/assets/a556f4a9-7312-429b-ae5c-33013b8d6ae9" />
+<img width="892" height="900" alt="image" src="https://github.com/user-attachments/assets/6c136243-548b-4da6-a099-3d9eb10c5aa2" />
+
 ---
 
 ## 🔥 Core Combat Features
